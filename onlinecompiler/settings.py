@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-vz1jx%$!*1nc1o0yz1i@re@&gbgpdbk-ljjb7iu793__n#(!ku
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['Nestly.pythonanywhere.com']
 
 
 # Application definition
@@ -129,12 +129,14 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static',
 ]
 STATIC_ROOT=BASE_DIR / 'staticfiles'
+STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 OPENROUTER_API_KEY="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"
+
 
 
 
